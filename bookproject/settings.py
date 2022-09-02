@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'bookapp.apps.BookappConfig',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +69,14 @@ TEMPLATES = [
         },
     },
 ]
+
+JAZZMIN_SETTINGS = {
+    
+    "site_title": "BOOKAPP",
+    "site_header": "BOOKAPP",
+    "site_brand": "BOOKAPP",
+    "login_logo": None,
+}
 
 WSGI_APPLICATION = 'bookproject.wsgi.application'
 
